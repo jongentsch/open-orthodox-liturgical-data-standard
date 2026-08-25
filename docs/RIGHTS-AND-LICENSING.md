@@ -1,7 +1,8 @@
 # Rights and licensing direction
 
-Status: research-stage policy and decision agenda, not legal advice and not a
-license grant.
+Status: adopted initial policy, 2026-08-24. This document explains the policy;
+the actual grants are in the repository [LICENSE](../LICENSE) and canonical
+legal texts under `LICENSES/`. This is not legal advice.
 
 ## Open source and a noncommercial mission
 
@@ -43,21 +44,20 @@ project mission.
 A repository-level `LICENSE` must not be interpreted as relicensing imported
 material that contributors do not own.
 
-## Candidate project choices
+## Adopted project choices
 
-These are options for legal review, not adopted decisions:
+- specification prose, documentation, diagrams, and authored examples:
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/);
+- software, tooling, schemas, and machine-executable specification artifacts:
+  Apache-2.0;
+- original factual reference data and factual conformance fixtures explicitly
+  marked as OOLDS reference data: CC0-1.0;
+- authored descriptions, translations, and third-party resources: licensed and
+  tracked separately; never presumed to be CC0.
 
-- specification prose: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-  for explicit attribution, or CC0 where maximum specification reuse is more
-  important than required credit;
-- software/tooling: Apache-2.0 for an explicit patent grant, or MIT for maximum
-  simplicity;
-- schemas and tiny original examples: align with the software license, or dual
-  license/dedicate where that reduces reuse ambiguity;
-- original factual reference data: CC0 is the strongest interoperability
-  candidate where contributors control the relevant rights and database rights;
-- authored descriptions or translations: license separately; never assume CC0
-  is appropriate.
+The Apache-2.0 choice provides an explicit patent grant. CC BY preserves
+attribution for specification authors. CC0 minimizes friction when combining
+original factual reference data across independently maintained packs.
 
 Creative Commons warns that its licenses and CC0 are irrevocable and may be
 applied only by someone who owns or controls the rights. See its
@@ -97,11 +97,13 @@ metadata-only record.
 - Facts extracted manually still need source provenance even where copyright
   does not protect the fact itself.
 
-## Immediate repository state
+## Repository implementation
 
-No license has been selected, so no file in this repository currently grants
-reuse rights. The next human governance decision should select licenses before
-accepting substantial outside contributions or publishing a tagged release.
-After selection, add explicit headers/notices for exceptions and a machine-
-readable third-party notices inventory.
+The repository root `LICENSE` maps resource categories to the adopted licenses,
+and `LICENSES/` contains their legal texts. Contributions use the applicable
+category unless a different notice is explicitly accepted.
 
+Before the first tagged data release, add machine-readable per-resource notices,
+an exceptions/third-party inventory, and a validation rule that prevents
+unlicensed included assets. License compatibility and database-rights questions
+still require appropriate review when real corpora enter scope.

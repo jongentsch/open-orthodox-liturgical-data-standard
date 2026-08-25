@@ -1,7 +1,8 @@
 # Research-derived domain model
 
-Status: **working architecture, not a schema**. Field names and examples in this
-document are illustrative. They must not be treated as a compatibility promise.
+Status: **accepted Phase 2 working hypothesis, not a schema**. Field names and
+examples in this document are illustrative. They must not be treated as a
+compatibility promise, and adversarial/domain review can still revise the model.
 
 ## Core distinction
 

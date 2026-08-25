@@ -1,6 +1,7 @@
 # Governance direction
 
-Status: proposed foundation, not an adopted charter.
+Status: bootstrap policy adopted 2026-08-24; a community charter remains future
+work.
 
 ## Governing principle
 
@@ -82,11 +83,17 @@ tests. Domain conflicts should normally remain parallel scoped claims. A
 maintainer with an institutional, publishing, financial, or authorship interest
 in a decision should disclose it and avoid being the sole approver.
 
-## Before adoption
+## Bootstrap state
 
-The project still needs named maintainers, quorum and voting/fallback rules,
-appeal and moderation procedures, trademark/name policy, contributor licensing
-decision, security contact, release signing authority, and a code of conduct.
-Those choices require actual participants and must not be fabricated by the
-initial repository scaffold.
+- Jon Gentsch (`@jongentsch`) is the initial technical maintainer.
+- Consequential architectural changes are recorded as ADRs.
+- The working entity/observance/claim architecture can proceed through Phase 2,
+  but normative schemas require external liturgical and technical review.
+- The project begins in a public personal GitHub repository and may transfer to
+  an organization when additional maintainers exist.
+- Conformance never implies ecclesiastical endorsement.
 
+The project still needs quorum and voting/fallback rules, appeal and moderation
+procedures, trademark/name policy, security contact, release signing authority,
+and a code of conduct. Those choices require actual participants and should be
+adopted before governance expands beyond the bootstrap maintainer.

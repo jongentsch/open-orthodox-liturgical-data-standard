@@ -3,10 +3,11 @@
 OOLDS is not yet accepting normative data or schema commitments. Contributions
 should improve the evidence base, domain model, test cases, or project boundary.
 
-No project or contribution license has been adopted. Before submitting
-substantial copyrightable material, discuss licensing with the maintainers; a
-public pull request must not be assumed to grant permission for a future OOLDS
-license.
+Unless a contribution carries a different notice explicitly accepted by the
+maintainers, submitting it means licensing it under the applicable category in
+[LICENSE](LICENSE): Apache-2.0 for software/schemas, CC BY 4.0 for specification
+and documentation, or CC0-1.0 for original factual reference data explicitly
+marked for dedication. Contributors must have the right to make that grant.
 
 ## Useful contributions
 

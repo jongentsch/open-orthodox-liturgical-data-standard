@@ -92,8 +92,8 @@ Deliverables:
 - conformance levels, compatibility rules, migrations, and error taxonomy;
 - canonical JSON decision and restricted YAML authoring profile decision;
 - JSON-LD mapping feasibility proof;
-- project governance, contribution process, security contact, and license
-  selection.
+- mature project governance, contribution process, security contact, and review
+  of the already selected license stack against real release contents.
 
 Proposed specification family:
 
