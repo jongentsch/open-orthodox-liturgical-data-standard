@@ -1,0 +1,87 @@
+name: Phase 2 domain review
+description: Review the OOLDS conceptual model from a liturgical, linguistic, scholarly, implementation, or licensing perspective.
+title: "Phase 2 review: "
+labels:
+  - domain-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reviewing the pre-schema model. Conformance is not ecclesial endorsement, and disagreement should be preserved with evidence rather than flattened.
+
+        Please read `docs/review/PHASE-2-REVIEW-PACKET.md` and identify the exact documents or cases you reviewed.
+
+  - type: dropdown
+    id: perspective
+    attributes:
+      label: Reviewer perspective
+      options:
+        - Orthodox jurisdiction or liturgical tradition
+        - Clergy or liturgics
+        - Greek language or text
+        - Church Slavonic language or text
+        - Library, archive, history, or textual scholarship
+        - Calendar or publishing application implementation
+        - Typikon or service-planning implementation
+        - Licensing or open-data review
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: context
+    attributes:
+      label: Affiliation or review context (optional)
+      description: Share only what you are comfortable publishing.
+
+  - type: textarea
+    id: materials
+    attributes:
+      label: Materials reviewed
+      description: List documents, sections, adversarial cases, sources, or commits.
+    validations:
+      required: true
+
+  - type: textarea
+    id: blocking
+    attributes:
+      label: Blocking issues
+      description: For each issue, give the document/section/case, a real example, and a proposed correction if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: non_blocking
+    attributes:
+      label: Non-blocking issues
+
+  - type: textarea
+    id: missing_cases
+    attributes:
+      label: Missing adversarial cases
+      description: Prefer primary sources or reproducible implementation behavior where available.
+
+  - type: textarea
+    id: terminology
+    attributes:
+      label: Terminology or translation concerns
+
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict within your review scope
+      options:
+        - Ready for Phase 3 conceptual fixtures
+        - Revise and request re-review
+        - No verdict; comments only
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Review acknowledgment
+      options:
+        - label: I understand this review concerns representation and does not imply ecclesiastical endorsement.
+          required: true
+

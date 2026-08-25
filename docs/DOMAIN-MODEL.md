@@ -448,26 +448,21 @@ That is a recommendation, not a decision. The conceptual model must first be
 expressible in relational databases, document stores, RDF graphs, and ordinary
 files without one storage model leaking into the semantics.
 
-## Open questions before schema work
+## Phase 2 question dispositions
 
-1. Is an observance an identity anchor, a claim that an observance exists, or a
-   small anchor plus an existence/reception claim? The authoring burden differs.
-2. Which context dimensions require core semantics, and which can remain typed
-   extensions?
-3. Can the minimal calendar profile express real fixed-cycle edge cases without
-   becoming an embedded programming language?
-4. How are multiple calendars/paschalions versioned and test-vectored?
-5. What is the minimum rank-scheme metadata required for meaningful display
-   without implementing precedence?
-6. Should lection segments use a small native coordinate model with mappings to
-   OSIS, or require a declared external reference syntax?
-7. Which claim properties may inherit pack defaults without creating hidden
-   semantics?
-8. How are pack dependency conflicts reported without defining which claim wins?
-9. What governance can legitimately issue `oolds` namespace identifiers and
-   vocabulary versions?
-10. Which project and specification licenses permit broad adoption while
-    keeping third-party data rights explicit?
+| Question | Disposition |
+|---|---|
+| Observance anchor or claim | Minimal identity anchor plus reception/attribute claims; ADR 0005 |
+| Core context dimensions | Common typed dimensions plus extensible terms; explicit specified/unbounded/unknown scope; ADR 0006 |
+| Minimal calendar expressiveness | Fixed, Paschal-offset, and weekday-relative first-party extension; complex cases tested in Phase 3; ADR 0009 |
+| Calendar/paschalion versioning | Identified immutable definition/algorithm versions locked by packs; Phase 3 needs independent vectors |
+| Minimum rank metadata | Scheme ID/owner/version and stable terms/definitions/labels; engine consequences excluded; ADR 0009 |
+| Native or external lection coordinates | Native ordered segment model with required reference-system ID and external mappings; ADR 0009 |
+| Provenance defaults | Only explicit named profiles, expanded by normalization; ADR 0006 |
+| Dependency versus claim conflicts | Dependency/hash/namespace conflicts fail loading; overlapping domain claims compose and are reported; ADR 0006 |
+| `oolds` namespace governance | No production ecclesial identities during fixtures; external review precedes registry governance; ADR 0009 |
+| Project licensing | Apache-2.0 software/schemas, CC BY 4.0 documentation, CC0 factual reference data; ADR 0003 |
 
-These questions are the Phase 2 review agenda. A schema should not answer them
-accidentally through field layout.
+The internal Phase 2 model questions now have working dispositions. They remain
+reviewable hypotheses until the external-review gate is satisfied, and no
+schema should encode them before Phase 3 fixtures attack the model.

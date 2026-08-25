@@ -25,6 +25,8 @@ Exit gate:
 
 ## Phase 2 — domain model review
 
+Status: **internal review draft complete; required external review pending**.
+
 Deliverables:
 
 - glossary with necessary and sufficient distinctions;

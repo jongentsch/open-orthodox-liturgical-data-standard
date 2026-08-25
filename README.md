@@ -34,12 +34,24 @@ limits of that conclusion.
 - [Principles](PRINCIPLES.md) — design commitments that proposals must preserve
 - [Prior art](docs/PRIOR-ART.md) — source-by-source research and comparison
   matrix
-- [Research-derived domain model](docs/DOMAIN-MODEL.md) — candidate concepts,
-  classifications, and open questions; not a schema
+- [Research-derived domain model](docs/DOMAIN-MODEL.md) — working concepts,
+  classifications, and Phase 2 question dispositions; not a schema
+- [Phase 2 glossary](docs/GLOSSARY.md) — strict distinctions among anchors,
+  claims, sources, occurrences, works, and packs
+- [Conceptual contracts](docs/MODEL-CONTRACTS.md) — cardinalities, context,
+  validity, claim modes, defaults, and conflict behavior
+- [Identifier lifecycle](docs/IDENTITY-LIFECYCLE.md) — namespace stewardship,
+  mappings, merges, splits, redirects, and reproducibility
+- [Localization](docs/LOCALIZATION.md) and [provenance](docs/PROVENANCE.md) —
+  language/script/name and evidence/authority/review rules
 - [Typikon boundary](docs/TYPIKON-BOUNDARY.md) — what belongs in exchange data
   and what belongs in a resolution engine
 - [Adversarial cases](docs/ADVERSARIAL-CASES.md) — cases a credible v0.1 model
   must handle without loss
+- [Case dispositions](docs/CASE-DISPOSITIONS.md) — Phase 2 outcome for all forty
+  cases
+- [External review packet](docs/review/PHASE-2-REVIEW-PACKET.md) — requested
+  perspectives, questions, and exit checklist
 - [Consumer tests](docs/CONSUMER-TESTS.md) — architecture checks for calendars,
   bulletins, workbenches, Typikon engines, and research
 - [Conformance plan](docs/CONFORMANCE-PLAN.md) — structural, semantic, graph,
