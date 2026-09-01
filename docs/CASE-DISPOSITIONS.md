@@ -93,6 +93,14 @@ afterfeast, and leave-taking records from at least Greek and Slavic sources.
    activity.
 8. Rights-safe metadata-only records must remain useful without protected text
    or media bytes.
+9. Mutable personal and team workspace state is excluded from a published
+   digest unless explicitly selected for release.
+10. At least two independently published digest releases contain overlapping,
+    incompatible claims and compose without overwrite or loss of review scope.
+11. A corrected digest supersedes an immutable prior release while preserving
+    the cited release, lock, and hashes.
+12. A combined research output records the exact digest releases and explicit
+    filtering or resolution activity that produced it.
 
 ## Model changes caused by the cases
 

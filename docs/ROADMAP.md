@@ -71,7 +71,11 @@ Deliverables:
 - overlapping claims from at least one OCA/Slavic and one Greek/GOARCH source,
   with Antiochian and ROCOR witnesses where they expose additional structure;
 - walk-throughs for the calendar, parish bulletin, reader/workbench,
-  typikon-engine, and digital-humanities consumers;
+  typikon-engine, digital-humanities, and collaborative research-corpus
+  consumers;
+- conceptual R1-R10 fixtures for personal and team workspaces, immutable digest
+  releases, conflicting digest composition, restricted evidence, publisher
+  changes, and reproducible combined outputs;
 - a loss ledger showing information preserved, intentionally deferred, or still
   impossible to represent.
 
@@ -80,6 +84,9 @@ Exit gate:
 - each fixture distinguishes common identity from source-backed local claims;
 - no fixture copies text or media without a rights basis;
 - failures cause model revision rather than fixture-specific escape fields;
+- mutable workspace state remains separate from portable released data;
+- independently published digests compose without overwriting conflicting
+  claims, review scope, or rights;
 - reviewers agree the model is ready to become specification prose.
 
 ## Phase 4 — v0.1 specification architecture
@@ -91,6 +98,7 @@ Deliverables:
 - identifier and namespace policy;
 - pack manifest, dependency, lockfile, and resource-index design;
 - calendar, lection, localization, and versioning documents;
+- decision on an optional immutable research-digest publication profile;
 - conformance levels, compatibility rules, migrations, and error taxonomy;
 - canonical JSON decision and restricted YAML authoring profile decision;
 - JSON-LD mapping feasibility proof;
@@ -128,6 +136,8 @@ Deliverables:
 - rights-safe positive and negative machine fixtures;
 - canonicalization, YAML-to-JSON, JSON round-trip, and Unicode test vectors;
 - fixtures containing conflicting packs and unknown extensions;
+- digest-release composition, supersession, restricted-evidence, and combined-
+  output trace fixtures;
 - migration examples from Ponomar, Orthocal, one official annual witness, and a
   Church Slavonic text catalog, using only data whose inclusion is permitted;
 - command-line structural/semantic validator with human-facing diagnostics;
@@ -162,7 +172,9 @@ Candidate pilots:
 - GOARCH or OCA component catalog references without redistributing restricted
   text;
 - Church Slavonic work/expression/asset catalog;
-- two jurisdiction packs containing an intentional rank or reading conflict.
+- two jurisdiction packs containing an intentional rank or reading conflict;
+- two independently curated research digests containing an intentional identity
+  or historical-claim disagreement and a reproducible combined output.
 
 Exit gate:
 

@@ -63,6 +63,24 @@ Before v0.1, fixtures derived from rights-safe minimal facts should prove that:
    reported rather than treated as permissive;
 8. merge, split, deprecation, and redirect histories round-trip without dangling
    references.
+9. publishing a digest excludes workspace-only notes, comments, attachments,
+   credentials, and embargoed material unless each item is explicitly included
+   with an adequate rights and access basis;
+10. combining digest releases preserves every conflicting claim, issuer,
+    evidence use, review state, and scope rather than selecting a winner;
+11. a corrected digest release supersedes rather than mutates a cited prior
+    release, whose manifest, lock, hashes, and meaning remain reproducible; and
+12. every combined research output identifies its exact digest releases and
+    any filtering or resolution activity.
+
+## Cross-consumer research corpus scenarios
+
+The R1-R10 fixtures in
+[Research corpus and collaborative digests](RESEARCH-CORPUS-AND-DIGESTS.md)
+test personal and team workspaces, immutable digest releases, cross-digest
+conflict, restricted evidence, publisher changes, federation, and reproducible
+combined outputs. They supplement the forty domain cases without renumbering
+or changing their Phase 2 dispositions.
 
 ## Review request
 

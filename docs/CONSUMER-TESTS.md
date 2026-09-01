@@ -1,8 +1,8 @@
 # Consumer architecture tests
 
 Every core concept should serve more than one consumer or protect information
-that would otherwise be lost. This matrix tests the working model before a
-schema exists.
+that would otherwise be lost. This matrix and the collaborative-research
+profile test the working model before a schema exists.
 
 | Concept | Calendar application | Parish bulletin | Reader/workbench | typikon-engine | Digital humanities |
 |---|---|---|---|---|---|
@@ -53,6 +53,23 @@ It can cite immutable releases, query historical validity, distinguish persons
 from hagiographic works and observances, retain uncertain mappings, and compare
 names and claims across sources without privileging current reception.
 
+### Collaborative research corpus and digest platform
+
+It can index identities, sources, citations, competing claims, mappings, and
+review history without presenting one flattened corpus answer as universally
+authoritative. Personal and team workspaces may be mutable, but a published
+digest release is immutable, attributable, rights-aware, and reproducible from
+an exact lock.
+
+Two independently published digests compose without overwriting incompatible
+claims. Combined outputs cite their exact digest releases and any filtering or
+resolution activity. Another application can consume the released data without
+implementing the originating service's accounts, permissions, comments, or
+editorial workflow.
+
+The complete conceptual profile and its Phase 3 fixtures are in
+[Research corpus and collaborative digests](RESEARCH-CORPUS-AND-DIGESTS.md).
+
 ## Architectural rejection test
 
 A proposed core feature should be reconsidered if it:
@@ -62,5 +79,8 @@ A proposed core feature should be reconsidered if it:
 - can be expressed as a pack vocabulary or optional extension without loss;
 - duplicates a mature text/media standard;
 - forces consumers to resolve a genuine disagreement while parsing;
+- turns mutable workspace state or application permissions into portable
+  domain truth;
+- requires another consumer to reproduce one website's collaboration model in
+  order to read a published digest;
 - makes a simple source-backed name or mapping prohibitively difficult to add.
-

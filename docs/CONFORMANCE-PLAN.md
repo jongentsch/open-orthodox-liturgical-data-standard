@@ -44,6 +44,8 @@ Suggested code families:
 - `E-CLAIM-*` scope, validity, evidence, and status;
 - `E-RIGHTS-*` missing or incompatible effective rights;
 - `E-PACK-*` manifests, locks, hashes, and archive safety;
+- `E-DIGEST-*` optional digest-release selection, attribution, supersession,
+  and input-trace rules;
 - `E-SER-*` YAML/JSON/Unicode normalization.
 
 Warnings should be reserved for representable uncertainty or recommended
@@ -89,6 +91,16 @@ Given the same locked pack bytes, tool and algorithm versions, and request
 context, normalized output and its digest must match. Historical queries use an
 explicit as-of policy and do not silently apply current claims.
 
+### Research digest properties
+
+If the optional research-digest publication profile is adopted, run the R1-R10
+fixtures in
+[Research corpus and collaborative digests](RESEARCH-CORPUS-AND-DIGESTS.md).
+Test that release selection is explicit, prior releases remain immutable,
+supersession is traceable, restricted workspace material does not leak,
+conflicting digests compose without overwrite, and combined outputs identify
+their exact inputs and decision activity.
+
 ### Consumer contracts
 
 Run the scenarios in [Consumer architecture tests](CONSUMER-TESTS.md), including
@@ -111,4 +123,3 @@ A passing validator establishes representation and declared constraints. It
 does not establish historical truth, ecclesiastical authority, copyright
 ownership, quality of translation, or liturgical correctness of a generated
 service.
-

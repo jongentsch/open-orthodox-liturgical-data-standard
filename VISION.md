@@ -40,6 +40,8 @@ OOLDS will define a small, extensible, implementation-neutral way to exchange:
 - editors maintaining calendar, hagiographic, hymnographic, or scriptural data;
 - researchers reconciling persons, observances, texts, manuscripts, and
   historical witnesses;
+- collaborative research-corpus and digest platforms that publish attributable,
+  reproducible selections without flattening disagreement;
 - engine authors who need neutral inputs without adopting a single project's
   database model.
 
@@ -72,6 +74,8 @@ OOLDS will not, in its core specification:
 - redistribute source material whose permissions do not permit it;
 - require network access, a central resolver, RDF storage, or a particular
   programming language;
+- standardize user accounts, permissions, editorial workflow, moderation, or
+  hosting policy;
 - make application presentation objects into canonical domain records.
 
 ## Relationship to existing systems
@@ -93,9 +97,10 @@ monolith:
 - text-catalog and fine-grained annotation profiles;
 - an offline pack and lockfile format;
 - validation rules and conformance fixtures;
+- an optional publication profile for immutable research digests and
+  reproducible combined outputs;
 - optional registries and mappings maintained by communities with declared
   governance.
 
 This shape remains a hypothesis until the domain model has passed the
 adversarial cases and public review.
-
