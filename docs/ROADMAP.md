@@ -3,6 +3,21 @@
 The roadmap is gate-based rather than date-based. A large schema or reference
 implementation is not progress if the conceptual boundary is wrong.
 
+## Non-normative alpha demonstration track
+
+Status: **interactive first slice available**.
+
+The repository may maintain an alpha application in parallel with the gated
+specification work. Its purpose is to make the working model understandable,
+surface usability and product-boundary problems, and generate better Phase 3
+fixtures. It does not close a review gate, stabilize field names, define a wire
+format, or authorize production identities or data.
+
+The first slice demonstrates corpus anchors, sourced and scoped claims, a
+mutable team digest, an explicit immutable release boundary, and composition
+that preserves conflicting claims. It runs locally in Docker and is packaged
+for a conventional Railway deployment. See [`alpha/README.md`](../alpha/README.md).
+
 ## Phase 1 — research foundation
 
 Status: **first pass complete; external review pending**.

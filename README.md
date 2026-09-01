@@ -20,6 +20,11 @@ schema, registry, reference implementation, or endorsed dataset yet. That is a
 deliberate constraint: the domain model and project boundary must survive
 external review before syntax becomes a compatibility promise.
 
+A separate **non-normative research alpha** now makes the working concepts
+clickable without advancing or bypassing the specification gates. It uses only
+illustrative fixture data and can be run locally with Docker. See the
+[alpha guide](alpha/README.md).
+
 The first research pass found useful prior art in Ponomar, Orthocal,
 typikon-engine and its jurisdiction packs, the GOARCH Digital Chant Stand,
 Ispovednik, OCA and Antiochian calendar/service sources, and Church Slavonic
@@ -57,6 +62,9 @@ limits of that conclusion.
 - [Research corpus and collaborative digests](docs/RESEARCH-CORPUS-AND-DIGESTS.md)
   — conceptual boundary for mutable workspaces, immutable digest releases, and
   reproducible cross-digest composition
+- [Research alpha](alpha/README.md) — Docker-ready interactive demonstration of
+  anchors, sourced claims, team digests, releases, and conflict-preserving
+  composition; not a schema or endorsed dataset
 - [Conformance plan](docs/CONFORMANCE-PLAN.md) — structural, semantic, graph,
   serialization, pack, and reproducibility tests
 - [Rights and licensing](docs/RIGHTS-AND-LICENSING.md) — resource-level rights
